@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Formulario</title>
+  </head>
+  <body class="wrapper">
+    <div hidden>
+      <h1>Mi primer formulario</h1>
+      <form>
+        <fieldset>
+          <legend>Iniciar Sesión</legend>
+          <input
+            name="email"
+            type="email"
+            placeholder="Ingrese un correo"
+            required
+          />
+          <input
+            name="password"
+            type="password"
+            placeholder="Ingrese un password"
+            required
+          />
+          <button type="submit">Iniciar Sesión</button>
+        </fieldset>
+      </form>
+    </div>
+    <h1>Formulario</h1>
+    <form>
+      <fieldset>
+        <legend>Ingresa todos tus datos</legend>
+        <label for="name" name="name">Nombre</label>
+        <input id="name" type="text" placeholder="Ingrese su nombre" required />
+        <label for="lastname" name="lastname">Apellido</label>
+        <input id="lastname" type="text" placeholder="Ingrese su apellido" />
+        <label for="date" name="date">Fecha Nacimiento</label>
+        <input id="date" type="date" />
+        <label for="email">E-mail</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Ingrese su email"
+        />
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="Ingrese su password"
+        />
+        <label for="phone">Celular</label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          maxlength="9"
+          placeholder="Ingrese su celular"
+        />
+        <label for="country">País</label>
+        <select id="country" name="country">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="Perú">Perú</option>
+          <option value="Chile">Chile</option>
+          <option value="Colombia">Colombia</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Venezuela">Venezuela</option>
+        </select>
+        <!--         <label for="terminos">
+          <input type="checkbox" id="terminos" name="terminos" required style="width: 15px;" />Acepta terminos y condiciones
+        </label> -->
+        <div style="display: flex; justify-content: center">
+          <label for="suscription_1">
+            <input
+              id="suscription_1"
+              name="suscription"
+              type="radio"
+              checked
+            />Sucripción 1
+          </label>
+          <label for="sucription_2">
+            <input
+              id="sucription_2"
+              name="suscription"
+              type="radio"
+            />Sucripción 2
+          </label>
+          <label for="suscription_3">
+            <input
+              id="suscription_3"
+              name="suscription"
+              type="radio"
+            />Sucripción 3
+          </label>
+        </div>
+        <label for="texto"></label>
+        <textarea
+          id="texto"
+          name="texto"
+          cols="60"
+          rows="10"
+          placeholder="Escriba un texto sobre usted"
+          minlength="30"
+          maxlength="140"
+        ></textarea>
+        <button type="submit">Registrarse</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
